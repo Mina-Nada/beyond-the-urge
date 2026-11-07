@@ -15,6 +15,7 @@
 <style>
 .apply-wrap{min-height:100vh;background:radial-gradient(120% 60% at 50% 0%,#FBF1E3 0%,var(--dawn) 40%,var(--parchment) 100%);padding-bottom:64px}
 .apply-banner{height:150px;overflow:hidden;position:relative}
+.apply-banner picture{display:block;height:100%}
 .apply-banner img{width:100%;height:100%;object-fit:cover;object-position:50% 62%}
 .apply-card{max-width:680px;margin:-56px auto 0;position:relative;background:var(--offwhite);border:1px solid rgba(184,137,78,.45);border-radius:26px;padding:clamp(22px,5vw,40px);box-shadow:0 30px 60px -40px rgba(58,29,36,.45)}
 .apply-card h1{font-size:clamp(30px,7vw,40px);margin-bottom:6px}
@@ -60,7 +61,7 @@ html:not([lang="en"]) input[type=email],html:not([lang="en"]) input[type=tel]{te
 
 <main class="apply-wrap" id="main">
   <div class="apply-banner" aria-hidden="true">
-    <picture><source srcset="../../assets/desert.webp" type="image/webp"><img src="../../assets/desert.jpg" alt="" width="720" height="305"></picture>
+    <picture><source srcset="../../assets/desert.webp" type="image/webp"><img src="../../assets/desert.jpg" alt="" width="1800" height="762"></picture>
   </div>
   <div class="wrap">
     <div class="apply-card">
@@ -71,8 +72,8 @@ html:not([lang="en"]) input[type=email],html:not([lang="en"]) input[type=tel]{te
         <p class="sub l-ar">طلب قصير، مش هنسألك فيه عن أي تفاصيل شخصية. هنرد عليك خلال ٤٨ ساعة على الواتساب أو الإيميل.</p>
         <p class="sub l-en">A short application. We won’t ask for any personal details. We’ll reply within 48 hours on WhatsApp or email.</p>
         <div class="live-box live-only" style="margin:0 0 24px">
-          <span class="l-ar"><strong>عرض حضور اللايف، خصم ٢٠٪</strong> لكل الطلبات اللي توصل قبل ١٢ بالليل النهارده بتوقيت القاهرة.</span>
-          <span class="l-en"><strong>Live-audience offer, 20% off</strong> for every application received before midnight tonight, Cairo time.</span>
+          <span class="l-ar"><strong>عرض حضور اللايف، خصم ٢٠٪</strong> لكل الطلبات اللي توصل لحد آخر يوم بكرة، الحد ٨ نوفمبر، بتوقيت القاهرة.</span>
+          <span class="l-en"><strong>Live-audience offer, 20% off</strong> for every application received by the end of Sunday 8 November, Cairo time.</span>
         </div>
 
         <div class="summary-err" id="summary" role="alert" tabindex="-1">
@@ -113,7 +114,7 @@ html:not([lang="en"]) input[type=email],html:not([lang="en"]) input[type=tel]{te
 
           <fieldset class="field" data-req="radio" data-name="entry.229768529">
             <legend><span class="l-ar">تقدر تحضر اللقاءات الأربعة؟</span><span class="l-en">Can you attend all four sessions?</span> <span class="req">*</span></legend>
-            <span class="hint"><span class="l-ar">الاتنين ١٦، ٢٣، ٣٠ نوفمبر و٧ ديسمبر، من ٨ لـ٩:٣٠ مساءً بتوقيت القاهرة.</span><span class="l-en">Mondays 16, 23, 30 November and 7 December, 8:00 to 9:30 PM Cairo time.</span></span>
+            <span class="hint"><span class="l-ar">الاتنين ٢٣ و٣٠ نوفمبر، و٧ و١٤ ديسمبر، من ٨ لـ٩:٣٠ مساءً بتوقيت القاهرة.</span><span class="l-en">Mondays 23 and 30 November, 7 and 14 December, 8:00 to 9:30 PM Cairo time.</span></span>
             <div class="opts">
               <label class="opt"><input type="radio" name="entry.229768529" value="أيوه، كلها"><span><span class="l-ar">أيوه، كلها</span><span class="l-en">Yes, all of them</span></span></label>
               <label class="opt"><input type="radio" name="entry.229768529" value="غالبًا هيفوتني لقاء واحد"><span><span class="l-ar">غالبًا هيفوتني لقاء واحد</span><span class="l-en">I’ll probably miss one</span></span></label>
@@ -169,7 +170,7 @@ html:not([lang="en"]) input[type=email],html:not([lang="en"]) input[type=tel]{te
         <h2><span class="l-ar">وصلنا طلبك</span><span class="l-en">Your application has arrived</span></h2>
         <p class="l-ar">شكرًا إنك اديت لنفسك المساحة دي. هنرد عليك خلال ٤٨ ساعة ونقول لك الخطوة الجاية.</p>
         <p class="l-en">Thank you for giving yourself this space. We’ll reply within 48 hours with the next step.</p>
-        <p class="l-ar" style="color:var(--earth);font-size:15.5px">لحد ما نتكلم، أهلاً بيك في تأملاتنا المجانية.</p>
+        <p class="l-ar" style="color:var(--earth);font-size:15.5px">لحد ما نتكلم، أهلاً بيك في تأملاتنا الشهرية.</p>
         <p class="l-en" style="color:var(--earth);font-size:15.5px">Meanwhile, you’re warmly welcome to our free meditations.</p>
         <a class="btn btn-ghost" href="https://chat.whatsapp.com/LsDNPxozBWl3V05pQF1aV1" target="_blank" rel="noopener"><span class="l-ar">انضم لجروب التأمل</span><span class="l-en">Join the meditation group</span></a>
         <br><a class="back link" href="../" data-keep-lang><span class="l-ar">ارجع لصفحة الرحلة</span><span class="l-en">Back to the journey page</span></a>

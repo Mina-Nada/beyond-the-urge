@@ -2,8 +2,8 @@
   var html = document.documentElement;
   html.classList.remove('no-js');
 
-  /* ---- Live offer: ends Saturday 7 Nov 2026, 11:59 PM Cairo time ---- */
-  var OFFER_END = new Date('2026-11-07T23:59:59+02:00').getTime();
+  /* ---- Live offer: ends Sunday 8 Nov 2026, 11:59 PM Cairo time ---- */
+  var OFFER_END = new Date('2026-11-08T23:59:59+02:00').getTime();
   function applyOffer() {
     var live = Date.now() <= OFFER_END;
     html.classList.toggle('offer-active', live);
