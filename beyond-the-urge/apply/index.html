@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ar-EG" dir="rtl" class="no-js offer-active" data-title-ar="طلب انضمام | ما وراء الرغبة" data-title-en="Apply | Beyond the Urge">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>طلب انضمام | ما وراء الرغبة</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#512B33">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+Arabic:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/site.js" defer></script>
+<style>
+.apply-wrap{min-height:100vh;background:radial-gradient(120% 60% at 50% 0%,#FBF1E3 0%,var(--dawn) 40%,var(--parchment) 100%);padding-bottom:64px}
+.apply-banner{height:150px;overflow:hidden;position:relative}
+.apply-banner img{width:100%;height:100%;object-fit:cover;object-position:50% 62%}
+.apply-card{max-width:680px;margin:-56px auto 0;position:relative;background:var(--offwhite);border:1px solid rgba(184,137,78,.45);border-radius:26px;padding:clamp(22px,5vw,40px);box-shadow:0 30px 60px -40px rgba(58,29,36,.45)}
+.apply-card h1{font-size:clamp(30px,7vw,40px);margin-bottom:6px}
+.apply-card .sub{color:var(--earth);margin-bottom:22px}
+.field{margin:0 0 22px;padding:0;border:0;min-width:0}
+.field>label,.field legend{display:block;font-weight:600;margin-bottom:6px;padding:0;font-size:16.5px}
+.req{color:var(--wine)}
+.hint{display:block;font-size:14px;color:var(--earth);margin:-2px 0 8px;font-weight:400}
+input[type=text],input[type=email],input[type=tel],textarea{width:100%;font:inherit;font-size:16px;color:var(--espresso);background:#fff;border:1.5px solid rgba(102,82,75,.28);border-radius:12px;padding:12px 14px;min-height:50px;transition:border-color .2s}
+textarea{min-height:96px;resize:vertical}
+input:focus,textarea:focus{outline:none;border-color:var(--wine);box-shadow:0 0 0 3px rgba(81,43,51,.15)}
+input[type=email],input[type=tel]{direction:ltr;text-align:start}
+html:not([lang="en"]) input[type=email],html:not([lang="en"]) input[type=tel]{text-align:right}
+.opts{display:grid;gap:8px}
+.opt{display:flex;align-items:flex-start;gap:12px;background:#fff;border:1.5px solid rgba(102,82,75,.2);border-radius:12px;padding:12px 14px;cursor:pointer;min-height:48px;line-height:1.6}
+.opt:has(input:checked){border-color:var(--wine);background:#FBF3EF}
+.opt input{width:20px;height:20px;margin:3px 0 0;accent-color:var(--wine);flex-shrink:0}
+.opt .other-text{margin-top:8px}
+.err{display:none;color:#9B2C2C;font-size:14.5px;margin-top:6px}
+.field.invalid .err{display:block}
+.field.invalid input[type=text],.field.invalid input[type=email]{border-color:#9B2C2C}
+.summary-err{display:none;background:#FBEDEA;border:1px solid #E3B5AC;color:#7A2323;border-radius:12px;padding:12px 14px;margin-bottom:18px}
+.summary-err.show{display:block}
+.submit-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:8px}
+.submit-row .btn{min-width:200px}
+.btn[disabled]{opacity:.6;cursor:wait}
+.done{display:none;text-align:center;padding:12px 0}
+.done.show{display:block}
+.done h2{font-size:clamp(28px,6vw,36px)}
+.done .ring{width:72px;height:72px;margin:0 auto 18px;border-radius:50%;border:1.5px solid var(--gold-line);display:grid;place-items:center;color:var(--wine);font-size:30px}
+.back{display:inline-block;margin:20px 0 0;font-size:15px}
+</style>
+</head>
+<body>
+<header class="site-header" style="position:absolute">
+  <div class="wrap">
+    <a class="brand" href="../" data-keep-lang style="color:var(--offwhite);text-shadow:0 1px 8px rgba(58,29,36,.5)"><span class="l-ar">ما وراء الرغبة</span><span class="l-en">Beyond the Urge</span></a>
+    <div class="header-actions">
+      <button class="lang-toggle" type="button"><span class="l-ar">English</span><span class="l-en ar-label">عربي</span></button>
+    </div>
+  </div>
+</header>
+
+<main class="apply-wrap" id="main">
+  <div class="apply-banner" aria-hidden="true">
+    <picture><source srcset="../../assets/desert.webp" type="image/webp"><img src="../../assets/desert.jpg" alt="" width="720" height="305"></picture>
+  </div>
+  <div class="wrap">
+    <div class="apply-card">
+
+      <div id="form-view">
+        <span class="eyebrow"><span class="l-ar">أول مجموعة</span><span class="l-en">First group</span></span>
+        <h1><span class="l-ar">طلب انضمام</span><span class="l-en">Application</span></h1>
+        <p class="sub l-ar">طلب قصير، مش هنسألك فيه عن أي تفاصيل شخصية. هنرد عليك خلال ٤٨ ساعة على الواتساب أو الإيميل.</p>
+        <p class="sub l-en">A short application. We won’t ask for any personal details. We’ll reply within 48 hours on WhatsApp or email.</p>
+        <div class="live-box live-only" style="margin:0 0 24px">
+          <span class="l-ar"><strong>عرض حضور اللايف، خصم ٢٠٪</strong> لكل الطلبات اللي توصل قبل ١٢ بالليل النهارده بتوقيت القاهرة.</span>
+          <span class="l-en"><strong>Live-audience offer, 20% off</strong> for every application received before midnight tonight, Cairo time.</span>
+        </div>
+
+        <div class="summary-err" id="summary" role="alert" tabindex="-1">
+          <span class="l-ar">من فضلك راجع الخانات المعلّمة وكمّل الناقص.</span>
+          <span class="l-en">Please check the highlighted fields and complete what’s missing.</span>
+        </div>
+
+        <form id="apply" novalidate action="https://docs.google.com/forms/d/e/1FAIpQLSdEVy9xXSa2qHlfTOggm_FE1WJnTbkG9TZLRb6T2FcKGsZAdg/formResponse" method="POST" target="gf-sink">
+
+          <div class="field" data-req="text">
+            <label for="f-name"><span class="l-ar">الاسم اللي تحب نناديك بيه</span><span class="l-en">The name you’d like us to call you</span> <span class="req">*</span></label>
+            <input type="text" id="f-name" name="entry.948259309" autocomplete="given-name" required>
+            <span class="err"><span class="l-ar">اكتب الاسم اللي تحب نناديك بيه.</span><span class="l-en">Please enter a name.</span></span>
+          </div>
+
+          <div class="field" data-req="email">
+            <label for="f-email"><span class="l-ar">الإيميل</span><span class="l-en">Email</span> <span class="req">*</span></label>
+            <span class="hint"><span class="l-ar">هنبعت لك عليه الرد والخطوة الجاية.</span><span class="l-en">We’ll send our reply and next step here.</span></span>
+            <input type="email" id="f-email" name="entry.1388282713" autocomplete="email" inputmode="email" required>
+            <span class="err"><span class="l-ar">اكتب إيميل صحيح.</span><span class="l-en">Please enter a valid email.</span></span>
+          </div>
+
+          <div class="field">
+            <label for="f-wa"><span class="l-ar">رقم الواتساب</span><span class="l-en">WhatsApp number</span> <span class="hint" style="display:inline"><span class="l-ar">(اختياري)</span><span class="l-en">(optional)</span></span></label>
+            <span class="hint"><span class="l-ar">لو حابب نتواصل معاك عليه بدل الإيميل.</span><span class="l-en">If you’d rather we reach you there.</span></span>
+            <input type="tel" id="f-wa" name="entry.1019615109" autocomplete="tel" inputmode="tel">
+          </div>
+
+          <fieldset class="field" data-req="radio" data-name="entry.380964501">
+            <legend><span class="l-ar">النوع</span><span class="l-en">Gender</span> <span class="req">*</span></legend>
+            <span class="hint"><span class="l-ar">بيساعدنا نكوّن مجموعة متوازنة.</span><span class="l-en">This helps us shape a balanced group.</span></span>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="entry.380964501" value="راجل"><span><span class="l-ar">راجل</span><span class="l-en">Man</span></span></label>
+              <label class="opt"><input type="radio" name="entry.380964501" value="ست"><span><span class="l-ar">ست</span><span class="l-en">Woman</span></span></label>
+            </div>
+            <span class="err"><span class="l-ar">اختار واحد.</span><span class="l-en">Please choose one.</span></span>
+          </fieldset>
+
+          <fieldset class="field" data-req="radio" data-name="entry.229768529">
+            <legend><span class="l-ar">تقدر تحضر اللقاءات الأربعة؟</span><span class="l-en">Can you attend all four sessions?</span> <span class="req">*</span></legend>
+            <span class="hint"><span class="l-ar">الاتنين ١٦، ٢٣، ٣٠ نوفمبر و٧ ديسمبر، من ٨ لـ٩:٣٠ مساءً بتوقيت القاهرة.</span><span class="l-en">Mondays 16, 23, 30 November and 7 December, 8:00 to 9:30 PM Cairo time.</span></span>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="entry.229768529" value="أيوه، كلها"><span><span class="l-ar">أيوه، كلها</span><span class="l-en">Yes, all of them</span></span></label>
+              <label class="opt"><input type="radio" name="entry.229768529" value="غالبًا هيفوتني لقاء واحد"><span><span class="l-ar">غالبًا هيفوتني لقاء واحد</span><span class="l-en">I’ll probably miss one</span></span></label>
+              <label class="opt"><input type="radio" name="entry.229768529" value="مش متأكد لسه"><span><span class="l-ar">مش متأكد لسه</span><span class="l-en">Not sure yet</span></span></label>
+            </div>
+            <span class="err"><span class="l-ar">اختار واحد.</span><span class="l-en">Please choose one.</span></span>
+          </fieldset>
+
+          <fieldset class="field" data-req="radio" data-name="entry.2095470756">
+            <legend><span class="l-ar">عرفت عن الرحلة منين؟</span><span class="l-en">How did you hear about the journey?</span> <span class="req">*</span></legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="entry.2095470756" value="حضرت لايف ما وراء الرغبة"><span><span class="l-ar">حضرت لايف ما وراء الرغبة</span><span class="l-en">I attended the Beyond the Urge live</span></span></label>
+              <label class="opt"><input type="radio" name="entry.2095470756" value="من صاحب أو حد أعرفه"><span><span class="l-ar">من صاحب أو حد أعرفه</span><span class="l-en">From a friend or someone I know</span></span></label>
+              <label class="opt"><input type="radio" name="entry.2095470756" value="من السوشيال ميديا"><span><span class="l-ar">من السوشيال ميديا</span><span class="l-en">Social media</span></span></label>
+              <label class="opt"><input type="radio" name="entry.2095470756" value="__other_option__" id="src-other"><span style="flex:1;display:block;min-width:0"><span class="l-ar">حاجة تانية</span><span class="l-en">Something else</span>
+                <input type="text" class="other-text" name="entry.2095470756.other_option_response" aria-label="Other"></span></label>
+            </div>
+            <span class="err"><span class="l-ar">اختار واحد.</span><span class="l-en">Please choose one.</span></span>
+          </fieldset>
+
+          <div class="field">
+            <label for="f-look"><span class="l-ar">إيه اللي بتدور عليه من الرحلة دي؟</span><span class="l-en">What are you hoping to find in this journey?</span> <span class="hint" style="display:inline"><span class="l-ar">(اختياري)</span><span class="l-en">(optional)</span></span></label>
+            <span class="hint"><span class="l-ar">سطر أو اتنين كفاية. من فضلك ما تكتبش تفاصيل شخصية أو مواقف بعينها هنا.</span><span class="l-en">A line or two is enough. Please don’t share personal details or specific incidents here.</span></span>
+            <textarea id="f-look" name="entry.784228275"></textarea>
+          </div>
+
+          <fieldset class="field" data-req="all" data-name="entry.1783056203">
+            <legend><span class="l-ar">تأكيدات</span><span class="l-en">Confirmations</span> <span class="req">*</span></legend>
+            <div class="opts">
+              <label class="opt"><input type="checkbox" name="entry.1783056203" value="عمري ١٨ سنة أو أكتر."><span><span class="l-ar">عمري ١٨ سنة أو أكتر.</span><span class="l-en">I am 18 or older.</span></span></label>
+              <label class="opt"><input type="checkbox" name="entry.1783056203" value="فاهم إن دي تجربة جماعية تعليمية وتطويرية عن الرغبة والاندفاع والتعلّق، من ضمنها الرغبات الجنسية، ومش علاج نفسي."><span><span class="l-ar">فاهم إن دي تجربة جماعية تعليمية وتطويرية عن الرغبة والاندفاع والتعلّق، من ضمنها الرغبات الجنسية، ومش علاج نفسي.</span><span class="l-en">I understand this is an educational group experience about desire, impulse and attachment, including sexual desire, and that it is not therapy.</span></span></label>
+              <label class="opt"><input type="checkbox" name="entry.1783056203" value="قريت سياسة الإلغاء والاسترداد في صفحة الرحلة وموافق عليها."><span><span class="l-ar">قريت <a href="../#policy" data-keep-lang target="_blank">سياسة الإلغاء والاسترداد</a> وموافق عليها.</span><span class="l-en">I’ve read and accept the <a href="../#policy" data-keep-lang target="_blank">cancellation and refund policy</a>.</span></span></label>
+            </div>
+            <span class="err"><span class="l-ar">محتاجين التأكيدات التلاتة علشان نقدر نراجع طلبك.</span><span class="l-en">All three confirmations are needed to review your application.</span></span>
+          </fieldset>
+
+          <div class="field">
+            <div class="opts">
+              <label class="opt"><input type="checkbox" name="entry.821313988" value="حابب توصلني أخبار اللقاءات والتجارب الجاية."><span><span class="l-ar">حابب توصلني أخبار اللقاءات والتجارب الجاية. (اختياري)</span><span class="l-en">I’d like to hear about future gatherings and journeys. (optional)</span></span></label>
+            </div>
+          </div>
+
+          <div class="submit-row">
+            <button class="btn btn-primary" type="submit" id="send"><span class="l-ar">ابعت الطلب</span><span class="l-en">Send application</span></button>
+            <a class="link" href="https://wa.me/201102172898" target="_blank" rel="noopener"><span class="l-ar">عندك سؤال؟ كلّمنا على الواتساب</span><span class="l-en">A question? Message us on WhatsApp</span></a>
+          </div>
+        </form>
+        <iframe name="gf-sink" id="gf-sink" title="" hidden style="display:none"></iframe>
+      </div>
+
+      <div class="done" id="done" role="status" tabindex="-1">
+        <div class="ring" aria-hidden="true">✓</div>
+        <h2><span class="l-ar">وصلنا طلبك</span><span class="l-en">Your application has arrived</span></h2>
+        <p class="l-ar">شكرًا إنك اديت لنفسك المساحة دي. هنرد عليك خلال ٤٨ ساعة ونقول لك الخطوة الجاية.</p>
+        <p class="l-en">Thank you for giving yourself this space. We’ll reply within 48 hours with the next step.</p>
+        <p class="l-ar" style="color:var(--earth);font-size:15.5px">لحد ما نتكلم، أهلاً بيك في تأملاتنا المجانية.</p>
+        <p class="l-en" style="color:var(--earth);font-size:15.5px">Meanwhile, you’re warmly welcome to our free meditations.</p>
+        <a class="btn btn-ghost" href="https://chat.whatsapp.com/LsDNPxozBWl3V05pQF1aV1" target="_blank" rel="noopener"><span class="l-ar">انضم لجروب التأمل</span><span class="l-en">Join the meditation group</span></a>
+        <br><a class="back link" href="../" data-keep-lang><span class="l-ar">ارجع لصفحة الرحلة</span><span class="l-en">Back to the journey page</span></a>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<script>
+(function () {
+  var form = document.getElementById('apply'), sink = document.getElementById('gf-sink');
+  var send = document.getElementById('send'), sent = false;
+  var emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+  // typing in "something else" selects that option
+  var other = form.querySelector('.other-text');
+  other.addEventListener('input', function () { document.getElementById('src-other').checked = true; });
+
+  function validate() {
+    var ok = true, first = null;
+    form.querySelectorAll('.field[data-req]').forEach(function (f) {
+      var t = f.getAttribute('data-req'), good = true;
+      if (t === 'text') good = f.querySelector('input').value.trim() !== '';
+      if (t === 'email') good = emailRe.test(f.querySelector('input').value.trim());
+      if (t === 'radio') good = !!f.querySelector('input[type=radio]:checked');
+      if (t === 'all') good = Array.prototype.every.call(f.querySelectorAll('input[type=checkbox]'), function (c) { return c.checked; });
+      f.classList.toggle('invalid', !good);
+      if (!good) { ok = false; first = first || f; }
+    });
+    return { ok: ok, first: first };
+  }
+
+  form.addEventListener('submit', function (e) {
+    var v = validate(), sum = document.getElementById('summary');
+    if (!v.ok) {
+      e.preventDefault();
+      sum.classList.add('show'); sum.focus();
+      var inp = v.first.querySelector('input,textarea'); if (inp) setTimeout(function () { inp.focus(); }, 50);
+      return;
+    }
+    sum.classList.remove('show');
+    form.querySelector('input[type=email]').value = form.querySelector('input[type=email]').value.trim().toLowerCase();
+    send.disabled = true; sent = true;
+  });
+
+  form.querySelectorAll('input,textarea').forEach(function (i) {
+    i.addEventListener('change', function () { var f = i.closest('.field'); if (f && f.classList.contains('invalid')) validate(); });
+  });
+
+  sink.addEventListener('load', function () {
+    if (!sent) return;
+    document.getElementById('form-view').style.display = 'none';
+    var d = document.getElementById('done'); d.classList.add('show'); d.focus();
+    window.scrollTo(0, 0);
+  });
+})();
+</script>
+</body>
+</html>
